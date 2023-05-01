@@ -6,6 +6,8 @@ function App() {
     <div>
       <h1>Hello React</h1>
       <p>{title} is my new toy</p>
+      <label htmlFor="search">Search:</label>
+      <input id="search" type="text"></input>
     </div>
   )
 }
