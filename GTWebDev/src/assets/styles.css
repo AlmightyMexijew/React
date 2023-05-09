@@ -1,0 +1,39 @@
+*{padding:0;margin:0;box-sizing: border-box;}
+body{background:#A0CD9A;
+display:flex;}
+#welcomebox{
+    display:inline-block;
+    height:40vh;
+    width:60vw;
+    background:#51A5D7;
+    margin-top:10vh;
+    margin-left:10vw;
+    border-radius:16px 4px;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;}
+#welcomebox h1{font-size:4rem;
+font-family:'Changa',sans-serif;}
+#welcomebox p{font-size:1.5rem;
+font-family:sans-serif;}
+main img{height:30vh;
+    width:20vw;
+    border-radius:50%;
+    margin-top:5vh;
+    margin-left:20px;}
+aside>nav{height:20vh;
+width:20vw;
+background:#51A5D7;
+border-radius:4px 16px;
+box-shadow:10px 5px 5px blue;
+margin-left:70vw;
+list-style:url('cpu.png');
+padding:10px 10px 10px 40px;}
+#otherbox1{
+    width:40vw;
+    height:20vh;
+    background:#51A5D7;
+    border-radius:16px 4px;
+    margin-left:30vw;
+    box-shadow:10px 5px 5px;
+
+}

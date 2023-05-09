@@ -1,0 +1,27 @@
+GTWebDev React build
+
+Nav--> NavLogo + NavList
+NavList --> Could be button or list link out components
+NavLogo --> span with a span inside.
+Body --> show contents of #about,#portfolio,#contact
+-------
+Other components and subcomponents possible:
+Body(Home): h1 header line + statement of purpose + Date/Website thing + pic +  services list
+
+Most needed of the 3:services list --> component ServiceList()
+subcomponents --> Design(),Dev(),ProjectManage()
+each with the contents of the vanilla page
+
+Body(About): h2 section title + personal bio + Design Explanation + Dev skill explanation
+
+Most needed component: Could be single page because it's informational.
+
+Body(Portfolio)
+h3 for title portfolio + 3 similar units of projects.
+Component: project == title h3 + img + explanation + link
+To start, have 3 different subcomponents based on main. Eventually change this to feed into itself from an object or array.
+
+
+Body(Contact)
+H3 title(contact me) + p about contacting me to work/talk/whatever + social media links.
+possible components: socialmedia --> each one specific subcomponent. when we can do the feed approach of body(portfolio) then same idea could expand here where socialmedia feeds an img/icon + p about what it is for unfamiliar + link to said space.

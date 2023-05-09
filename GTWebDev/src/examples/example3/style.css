@@ -1,0 +1,447 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+body{
+    background:white;
+    overflow:scroll;}
+/*Head*/
+header{
+    display:flex;
+    height:10vh;
+    background:rgba(252,185,0,1);}
+/*Head Img...our logo*/
+#logo{height:10vh;
+width:3vw;
+border-bottom:#fcb900 solid .5px;}
+#logo:hover + #logospan{color:rgba(252,185,0,1);}
+#logospan{
+    font-size:3rem;
+    font-weight:bold;
+    color:#fff;
+    background:black;
+    border-radius: 5px;
+    width:33vw;}
+/*Head->Nav  Nav bar toward the top of the page*/
+/*actual nav menu--dropdown menu: Home, About, Services, Contact..... make in ul...navmenu is sticky*/
+/*Color Scheme is black, yellow, white. */
+nav{background:#fcb900;
+max-height:10vh;}
+
+nav ul{display:flex;
+    padding:2vh 2vw;
+}
+nav ul li a{text-decoration: none;
+padding-left:10px;
+padding-top:10px;
+padding-right:10px;}
+nav ul li{list-style: none;
+margin-left:10px;
+font-size:24px;}
+nav ul li a:hover{text-decoration: underline;}
+nav input {margin-left:6vw;}
+/*Hero*/
+#hero{
+    height:40vh;
+    }
+#hero img{
+    float:left;
+    width:15vw;
+    height:30vh;
+    margin:5vh 10vw;
+    border-radius:8px;
+    box-shadow:grey 2px;}
+#hero h1{
+    font-size: 48px;
+    padding:4vh 4vw 0 0;
+    width:75%;
+    }
+#hero p{
+    font-size:22px;
+    padding: 4vh 0 0 0;
+    }
+/*CTA*/
+#calltoaction{clear:both;
+background:#fcb900;
+background-image: url("https://dthomefix.wpenginepowered.com/wp-content/uploads/2018/10/intro-section-pattern.png");
+text-align: center;
+height:40vh;}
+#calltoaction h2{font-size:48px;
+    padding:2vh 0 0 8vw;
+}
+#calltoaction p {
+    font-size:42px;
+    margin-right:6vw;}
+/*Services*/
+#services{background:black;
+color:white;
+height:60vh;}
+#services:hover{color:#fcb900;}
+
+/* services is a grid of 5 items, 1 = 2; 3,4,5 with background photos and span captions over that*/
+#services a{text-decoration: none;
+color:white;}
+#service1 a{color:aqua;
+text-shadow: blue 2px 2px;
+margin-right:10px;}
+#service2 a{
+    text-shadow:blue 2px 2px;
+margin-right:35px;
+text-decoration: dotted yellow;}
+#service3 a{text-shadow:black 2px 2px;
+margin-right:45px;}
+#service4 a{color:black;
+   text-shadow: white 4px;
+margin-right:10px;}
+#service5 a{color:black;
+    text-shadow:white 2px;
+margin-right:65px;}
+#services h2{font-size:48px;
+padding-top:10px;
+padding-left:30%;
+padding-bottom:10px;}
+#services p{font-size:24px;
+padding-left:10%;
+padding-bottom:90px;}
+#servicecontainer{
+height:200px;
+display:grid;
+grid-template-columns: 18% 15% 15% 15% 15%;
+grid-template-rows: 100%;
+column-gap:10px;
+padding-left:10%;}
+#service1,#service2,#service3,#service4,#service5{background-repeat: no-repeat;
+background-size:contain;
+height:135px;
+text-align: end;
+font-size:24px;
+font-weight:bold;
+border:1px solid white;
+border-radius:8px}
+#service1:hover,#service2:hover,#service3:hover,#service4:hover,#service5:hover{border:2px red solid}
+#service1{background-image: url("https://icons.iconarchive.com/icons/atyourservice/service-categories/256/Plumbing-icon.png");
+}
+#service2{background-image:url("https://www.coynecollege.edu/wp-content/uploads/2020/06/Learn-the-Basics-of-Home-Electrical-Wiring-CoyneCollege-scaled.jpeg");
+    background-size:cover;
+}
+#service3{background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOI7TjWSf1xKh-TbHTAJRszQn1CvuQVQwUwQ&usqp=CAU");
+background-size:cover;}
+#service4{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuuniOe2_RD88IO9XXywb0vpRzgITWFNWUhA&usqp=CAU");
+}
+#service5{background-image: url("https://www.gerards-buildmasters.es/wp-content/uploads/2022/10/kamer-verbouwen.jpg");
+    background-size:cover;
+}
+
+/*Success 4wide x 2tall*/
+#success{height:65vh;}
+#successcont{display:grid;
+grid-template-columns: 1.25fr 1.25fr 1.25fr 1.25fr;
+grid-template-rows:200px;
+column-gap:50px;
+padding-top:40px;
+padding-left:300px;
+padding-bottom:5px;
+padding-right:15vw;
+}
+#success h2{margin-left:25vw;
+font-size:48px;
+padding-top:10px;}
+#success p {margin-left:25vw;
+font-size:24px;}
+.successicon{border:2px solid black;
+height:auto;
+width:auto;
+border-radius:5px;
+}
+#successicon1{background-image: url("https://media.istockphoto.com/vectors/thumb-up-emoticon-vector-id157030584?k=20&m=157030584&s=612x612&w=0&h=TsRUZrgOW19D1f3WMleDrgGL-xfI6g0ZYhJDp58lS0E=");
+background-size: cover;}
+#successicon2{background-image: url("https://media.istockphoto.com/photos/check-list-with-completed-stamp-on-chalkboard-background-3d-rendering-picture-id1146511023?k=20&m=1146511023&s=612x612&w=0&h=ymyyUMQhQis0EVGukOHaVnEXj5OJcJ5Rm4UGv6E7fss=");
+background-size:cover;}
+#successicon3{background-image: url("https://www.brighamandwomensfaulkner.org/assets/Faulkner/news/cms-5-star-2019.jpg");
+background-size:cover;}
+#successicon4{background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/03/Avengers-Prime-Marvel-Comics.jpg?q=50&fit=contain&w=750&h=&dpr=1.5");
+background-size:cover;}
+#successstory1,#successstory2,#successstory3,#successstory4{
+width:200px;
+font-size:24px;
+color:#fcb900;
+text-shadow:black 8px;}
+#avodaivrit{color:white;}
+#avodaivrit:hover{color:blue;}
+
+/*Testimonials*/
+#testimonials{background:#fcb900;
+height:60vh;}
+#testimonials h2{font-size:48px;
+text-align: center;}
+#testimonials p{font-size:18px;
+text-align: center;}
+#testicont{display:flex;
+justify-content: space-evenly;}
+#testicont img{height:200px; width:220px;}
+#testi1,#testi2,#testi3{height:386px;
+width:33.3333%;
+border-left:2px black solid;}
+#testi1 img,#testi2 img,#testi3 img{margin-left:10vw;
+margin-top:5px;
+border:2px solid black;}
+#testi2 img{margin-left:10vw;}
+#testi3 img{margin-left:8vw;}
+#testi1 h3,#testi2 h3,#testi3 h3{padding-left:30%;}
+/*How it works*/
+#howitworks{height:40vh;
+border-bottom:2px #fcb900 solid;
+background-color:black;
+color:white;}
+#howcont{
+    padding:2vh 2vw;
+    display:grid;
+grid-template-columns:25% 25% 25% 25%;}
+#howitworks h2{padding:2vh 0 0 4vw;}
+#how1,#how2,#how3,#how4{
+    padding:0 2vw;
+}
+/*Footer*/
+footer{background-color:lightblue;
+height:10vh;}
+
+/*RESPONSIVENESS*/
+@media screen and (max-width:380px){
+    h1{font-size:1rem;}
+    h2{font-size:.8rem;}
+    ul,li,p{font-size:.5rem;}
+    #logospan{
+        font-size:1rem;
+        width:10vw;
+    }
+    /*section{border:1px greenyellow solid;}*/
+}
+@media screen and (min-width:381px) and (max-width:767px){
+    /*section{border:1px yellow solid;}*/
+    #logo{width:5vw;}
+    #logospan{
+        font-size:.8rem;
+        padding:2vh 4vw;
+    }
+    nav ul,nav li a{
+        padding:2vh 2vw;
+        font-size:.8rem;}
+    form{display:none;}
+    #hero h1{
+        font-size:1.5rem;
+        width:100vw;}
+    #hero p{font-size:1rem;}
+    #calltoaction img{height:100px;width:100px;}
+    #services{height:55vh;
+    padding:0 0 20vh 0;}
+    #services h2{font-size:1.5rem;}
+    #services p{
+        font-size:1rem;
+        padding:2vh 4vw 10vh 4vw;}
+    #servicecontainer{
+        display:grid;
+        margin-left:1vw;
+        grid-template-columns:.75fr .75fr .75fr;
+        column-gap: 10px;
+        grid-template-rows:1fr 1fr;
+        }
+    #service1 span,#service2 span, #service3 span, #service4 span,#service5 span{
+        font-size:.6rem;
+    }
+    #service1,#service2,#service3,#service4,#service5{
+        height:10vh;
+        width:20vw;
+    }
+    #success{height:50vh;}
+    #successcont{
+    width:100%;
+    column-gap: 0;
+    padding:2vh 4vw;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    row-gap:0;}
+    .successicon{
+        height:10vh;
+        width:13vw;
+    }
+    #successstory1,#successstory2,#successstory3,#successstory4{
+        width:20vw;
+        height:10vh;
+        font-size:.8rem;
+        /*border:1px solid black;*/
+        padding:1vh 1vw;}
+    #testimonials{
+        height:50vh;
+    }
+    #testimonials h2{
+        font-size:1.5rem;
+    }
+    #testimonials p{
+        font-size:1rem;
+    }
+    #testicont{
+        height:100%;
+    }
+    #testicont img{
+        height:10vh;
+        width:10vw;
+    }
+    #testicont h3{
+        font-size:.8rem;
+    }
+    #howitworks{
+        height:35vh;
+        width:100vw;
+    }
+    #howcont{
+        height:100%;
+        width:100%;
+        padding:0;
+        margin:0 6vw 2vh 2vw;
+        column-gap: 0;
+        
+    }
+    #howitworks h2{
+        font-size:1.5rem;
+        padding:2vh 2vw;
+    }
+    #howitworks h3{
+        font-size:.9rem;
+    }
+    #howitworks p{
+        font-size:.6rem;
+    }
+    #testilogo1,#testilogo2,#testilogo3,#testilogo4{
+        height:5vh;
+        width:5vw;
+        margin:0;
+        padding:0;
+    }
+    footer{height:12vh;
+    font-size:.8rem;}
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    /*section{border:1px red solid;}*/
+    #logospan{
+        width:15vw;
+        font-size:1rem;
+    }
+    form{margin:0;padding:0;}
+    input{margin:0;padding:0;}
+    nav ul{height:100%;}
+    nav button{margin:-20vh 0;}
+    #hero h1{font-size:1.7rem;}
+    #hero p{font-size:1rem;}
+    #calltoaction{height:40vh;}
+    #calltoaction img{height:100px;width:100px;}
+    #services{height:55vh;
+        padding:0 0 20vh 0;}
+        #services h2{font-size:1.5rem;}
+        #services p{
+            font-size:1rem;
+            padding:2vh 4vw 10vh 4vw;}
+        #servicecontainer{
+            display:grid;
+            margin-left:1vw;
+            grid-template-columns:.75fr .75fr .75fr;
+            column-gap: 10px;
+            grid-template-rows:1fr 1fr;
+            }
+        #service1 span,#service2 span, #service3 span, #service4 span,#service5 span{
+            font-size:.6rem;
+        }
+        #service1,#service2,#service3,#service4,#service5{
+            height:10vh;
+            width:20vw;
+        }
+    #success{height:50vh;}
+    #successcont{
+    width:100%;
+    column-gap: 0;
+    padding:2vh 4vw;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    row-gap:0;}
+    .successicon{
+        height:15vh;
+        width:13vw;
+    }
+    #successstory1,#successstory2,#successstory3,#successstory4{
+        width:20vw;
+        height:10vh;
+        font-size:1.5rem;
+        /*border:1px solid black;*/
+        padding:1vh 1vw;}
+        #testimonials{
+            height:40vh;
+        }
+        #testimonials h2{
+            font-size:1.5rem;
+        }
+        #testimonials p{
+            font-size:1rem;
+        }
+        #testicont{
+            height:100%;
+        }
+        #testicont img{
+            height:10vh;
+            width:10vw;
+        }
+        #testicont h3{
+            font-size:1.5rem;
+        }
+        #testi1,#testi2,#testi3{height:100%;}
+        #howitworks{
+            height:35vh;
+            width:100vw;
+        }
+        #howcont{
+            height:100%;
+            width:100%;
+            padding:0;
+            margin:0 6vw 2vh 2vw;
+            column-gap: 0;
+            
+        }
+        #howitworks h2{
+            font-size:1.5rem;
+            padding:2vh 2vw;
+        }
+        #howitworks h3{
+            font-size:.9rem;
+        }
+        #howitworks p{
+            font-size:.6rem;
+        }
+        #testilogo1,#testilogo2,#testilogo3,#testilogo4{
+            height:5vh;
+            width:5vw;
+            margin:0;
+            padding:0;
+        }
+        footer{height:12vh;
+        font-size:.8rem;}
+}
+@media screen and (min-width:1201px){
+    #calltoaction{height:45vh;}
+    #success{height:45vh;}
+    #successcont{
+        width:100%;
+        column-gap: 0;
+        padding:2vh 4vw;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        row-gap:0;}
+    .successicon{
+            height:20vh;
+            width:13vw;
+        }
+    #successstory1,#successstory2,#successstory3,#successstory4{
+            width:20vw;
+            height:10vh;
+            font-size:1.2rem;
+            font-weight:500;
+            /*border:1px solid black;*/
+            padding:1vh 1vw;}
+}

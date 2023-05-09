@@ -1,0 +1,78 @@
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+color:purple;}
+
+body{background-image:url('https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200109/18401675-bar-with-purple-background.jpg');
+background-repeat:no-repeat;
+background-position:cover;
+width:100vw;}
+
+#drinkimg{
+    height:200px;
+    width:200px;
+}
+
+.container{
+border:2px aqua solid;
+width:70vw;
+height:auto;
+padding:4vh 4vw;
+margin-left:15vw;
+background:linear-gradient(45deg,white,grey 25%,lightblue);
+border-radius:3px;
+overflow:auto;}
+
+.container h1{padding:4vh 4vw;}
+.container ol{
+    padding:2vh 4vw;}
+.container li{padding:0 1vw;}
+.container p{font-size:1rem;}
+#instructions{
+    height:auto;
+    width:100%;
+    border:2px goldenrod solid;
+    padding:2vh 2vw;
+}
+
+button{font-weight:bold;}
+input{width:15vw;}
+h2{text-decoration: wavy underline red;}
+@media screen and (min-width:900px){
+    h2{
+        margin-left:4vw;
+        }
+    .container h1{font-size:3rem;}
+    .container p{
+        font-size:1.2rem;
+        padding-left:4vw;}
+    .container ol{
+        padding-left:4vw;
+        margin-left:2.3vw;
+        font-size:1.8rem;
+    }
+    .container li{
+        padding:0;
+        font-size:1.4rem;
+    }
+    
+    .container{
+        margin-left:30vw;
+        height:100vh;
+        border:none;
+    }
+    form{
+        margin-left:3.85vw;
+    }
+    button{
+        margin-left:4vw;
+    }
+    #drinkimg{
+        margin-left:4vw;
+    }
+    #instructions{
+        margin-left:4vw;
+        width:80%;
+        height:auto;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h2>The name of the game, gentlemen, is <span id="RPS">ROCK PAPER SCISSORS.</span></h2>
+    <p>Pick one, then press "SHOOT" and try your luck. Rock beats scissors. Scissors beat paper. Paper beats rock. After you choose your position, you can ask the AI to make a choice and a winner will be declared.</p>
+    </header>
+    <div id="maincont">
+        <div class="container left">
+        <h1>Rock, Paper, Scissors</h1>
+        <button id="playerRock">I choose ROCK!</button>
+        <button id="playerPaper">I choose PAPER!</button>
+        <button id="playerScissors">I choose SCISSORS!</button>
+        <button id="shooter">SHOOT!</button>
+        </div>
+        <div class="container right">
+        <p>Player Score</p>
+        <span class="playerScore">0</span>
+        <p>AI Score</p>
+        <span class="aiScore">0</span>
+        </div>
+    </div>
+    <div id="seccont">
+        <h2>This project is ongoing.....</h2>
+        <h3>HISTORY:</h3>
+        <ul>
+            <li>January 2023:Updated to reflect CUBE CSS strategy</li>
+            <li>October 2022: Created in JavaScript (vanilla).</li>
+            <li>October 2022: Object-oriented version</li>
+        </ul>
+        <h3>Planned updates:</h3>
+        <ol>
+            <li>Finishing up the Object-oriented version. <a href="#">Link here</a></li>
+            <li>Multiple plays in a single go: queue up your choices, get a win count back</li>
+        </ol>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
